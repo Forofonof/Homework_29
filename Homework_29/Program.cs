@@ -4,9 +4,9 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        Readint();
+        ReadInt();
     }
-    static int Readint()
+    static int ReadInt()
     {
         int number = 0;
         string userInput;
