@@ -4,9 +4,9 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        CheckingNumbers();
+        Readint();
     }
-    static int CheckingNumbers()
+    static int Readint()
     {
         int number = 0;
         string userInput;
@@ -15,11 +15,13 @@ internal class Program
         while (isWorking)
         {
             Console.WriteLine("Введите число: ");
+
             userInput = Console.ReadLine();
 
             if (Int32.TryParse(userInput, out number))
             {
                 Console.WriteLine(number);
+
                 isWorking = false;
             }
             else
