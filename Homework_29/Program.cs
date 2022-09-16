@@ -15,13 +15,11 @@ internal class Program
         while (isWorking)
         {
             Console.WriteLine("Введите число: ");
-
             userInput = Console.ReadLine();
 
             if (Int32.TryParse(userInput, out number))
             {
                 Console.WriteLine(number);
-
                 isWorking = false;
             }
             else
@@ -29,6 +27,7 @@ internal class Program
                 Console.WriteLine("Введено неверное значение.");
             }
         }
+
         return number;
     }
 }
